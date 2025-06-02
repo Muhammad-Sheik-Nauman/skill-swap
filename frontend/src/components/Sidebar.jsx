@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div>
         <h2 className="text-2xl font-bold text-blue-800 mb-8">SkillSwap</h2>
         <ul className="space-y-4 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer" onClick={() => Navigate("/user")}>My Dashboard</li>
+          <li className="hover:text-blue-600 cursor-pointer" onClick={() => Navigate("/skill")}>Add Skills</li>
           <li className="hover:text-blue-600 cursor-pointer" onClick={() => Navigate("/profile")}>User Profile</li>
         </ul>
       </div>
