@@ -8,7 +8,6 @@ const Sidebar = () => {
         <ul className="space-y-4 text-gray-700 font-medium">
           <li className="hover:text-blue-600 cursor-pointer">My Dashboard</li>
           <li className="hover:text-blue-600 cursor-pointer">User Profile</li>
-          <li className="hover:text-blue-600 cursor-pointer">History</li>
         </ul>
       </div>
       <button className="mt-8 bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">

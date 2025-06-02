@@ -45,7 +45,7 @@ const Dashboard = () => {
 
         <div className="flex-1 p-6 overflow-y-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            📚 Trending / Recommended Courses
+            Recommended Courses
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[900px] overflow-y-auto pr-2 m-6">
