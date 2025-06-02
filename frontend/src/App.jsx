@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Auth from './pages/auth'
 import UserDashboard from './pages/userDashboard'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/user" element={<UserDashboard />} />
-        <Route path="*" element={<Landing />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
     </>
