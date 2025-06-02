@@ -4,7 +4,9 @@ import Button from '../components/Button'
 const Landing = () => {
   return (
     <div>
-        <Button>Hi there</Button>
+      <h1>Welcome to Skill Swap</h1>
+      <p>Swap skills, learn, and grow with your peers.</p>
+      <Button>Get Started</Button>
     </div>
   )
 }
