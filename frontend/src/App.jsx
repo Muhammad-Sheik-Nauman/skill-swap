@@ -3,8 +3,8 @@ import Landing from './pages/Landing'
 import Dashboard from './pages/Dashboard'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Auth from './pages/auth'
-import UserDashboard from './pages/skillDashboard'
 import ErrorPage from './pages/ErrorPage'
+import SkillDashboard from './pages/skillDashboard'
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/skill" element={<UserDashboard />} />
+        <Route path="/skill" element={<SkillDashboard />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
