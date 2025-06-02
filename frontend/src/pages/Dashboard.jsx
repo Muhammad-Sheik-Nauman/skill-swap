@@ -63,14 +63,12 @@ const Dashboard = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[900px] overflow-y-auto pr-2">
                         {skills.map((skill, idx) => (
-                            <button
-                                className='cursor-pointer'
+                            <div
                                 onClick={() => handleOpenModal(skill)}
                                 key={idx}
+                                className="cursor-pointer"
                             >
-                                <div
-                                    className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1"
-                                >
+                                <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                                     <div className="flex items-center gap-3 mb-3">
                                         <BookOpen className="text-indigo-500" />
                                         <h3 className="text-lg font-semibold text-gray-800">
@@ -89,7 +87,7 @@ const Dashboard = () => {
                                         </button>
                                     </div>
                                 </div>
-                            </button>
+                            </div>
                         ))}
                     </div>
                 </div>

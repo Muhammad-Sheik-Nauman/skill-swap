@@ -1,10 +1,12 @@
 import { useState, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true)
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
+  const navigate = useNavigate()
 
   const handleLoginInfo = (e) => {
     e.preventDefault()
@@ -15,10 +17,11 @@ const Auth = () => {
         isLogin
           ? 'http://localhost:3000/api/v1/login'
           : 'http://localhost:3000/api/v1/register',
-        { email, password }
+        { username: email, password }
       )
       .then((response) => {
         console.log(response.data)
+          navigate('/dashboard')
       })
       .catch((error) => {
         if (error.response && error.response.data) {

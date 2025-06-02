@@ -9,9 +9,13 @@ export const register = async (req, res) => {
     req.session.userId = user._id;
     res.status(201).json({ message: 'Registered successfully' });
   } catch (err) {
+    if (err.code === 11000) {
+      return res.status(400).json({ error: 'Username already exists' });
+    }
     res.status(500).json({ error: err.message });
   }
 };
+
 
 export const login = async (req, res) => {
   const { username, password } = req.body;
