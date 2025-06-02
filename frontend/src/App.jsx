@@ -5,6 +5,7 @@ import './App.css'
 import Landing from './pages/Landing'
 import Dashboard from './pages/Dashboard'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Auth from './pages/auth'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/auth" element={<Auth />} />
+
       </Routes>
     </BrowserRouter>
     </>
